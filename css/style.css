@@ -90,6 +90,40 @@ ul.nav_left, ul.nav_right {
   Width: 10%;
 }
 
+/* SERVICES */
+
+.services{
+  height: 780px;
+  margin-top: 80px;
+  margin-bot: 80px;
+}
+
+.services  [class*="10"]{
+  background-color: #fafafa;
+  text-align: center;
+}
+
+.services img:last-child{
+  width: 100%;
+}
+
+.services img:first-child{
+  width: 30%;
+  margin-top: 50px;
+}
+
+.services h3{
+  margin: 30px auto;
+}
+
+.services a{
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: blue;
+}
+
+
+
 
 @media screen and (min-width: 769px) and (max-width: 992px){
 
