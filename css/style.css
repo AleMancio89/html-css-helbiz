@@ -43,11 +43,11 @@ html{
   transform: translate(0, -50%);
 }
 
-[class*="col-"] li{
+header [class*="col-"] li{
   display: inline-block;
 }
 
-[class*="nav_"] li a{
+header [class*="nav_"] li a{
   text-decoration: none;
   color: black;
   margin-left: 20px;
@@ -166,6 +166,196 @@ ul.nav_left, ul.nav_right {
   margin-top: 10px;
 }
 
+/* KNOW MORE */
+
+.more_top{
+  margin-top: 100px;
+  margin-bottom: 30px;
+  background-image: url(../img/garden.jpg);
+  text-align: center;
+  color: white;
+}
+
+.more_top:first-child *{
+  padding-left: 30px;
+  padding-right: 60px;
+}
+
+.more_top h1{
+  font-size: 3rem;
+  margin-top: 120px;
+}
+
+.more_top p{
+  font-size: 1.2rem;
+  margin: 40px 0;
+}
+
+.more_top a{
+  text-decoration: none;
+  color: white;
+}
+
+.more_bot > div{
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.more_bot .card_app{
+  height: 400px;
+  width: calc(100% - 15px);
+  background-color: #163841;
+  margin-right: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.more_bot .card_app img{
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0)
+}
+
+.more_bot .card_find_us{
+  height: 400px;
+  width: calc(100% - 15px);
+  background-color: #163841;
+  margin-left: 15px;
+  background-image: url(../img/bg-city.jpg);
+  background-size: cover;
+}
+
+.more_bot > div  h2{
+  padding-top: 20px;
+}
+
+.more_bot > div  p{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.more_bot a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+
+/* FAMILY */
+
+#family{  
+  padding-top: 180px;
+  padding-bottom: 180px;
+  background-image: url(../img/family.jpg);
+  background-size: cover;
+}
+
+#family .core{
+  position:relative;
+  left: 50%;
+  transform: translate(-50%); 
+  background-color: white;
+  max-width: 400px;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 30px;
+}
+
+.core ul li{
+  display: inline-block;  
+  font-size: 1.7rem;
+  margin-left:20px;
+  margin-top: 10px;
+}
+
+.core ul li:first-of-type{
+  margin-left: 0;
+}
+
+/* FOOTER */
+
+footer{
+  background-color: black;
+  margin-top: 30px;
+  padding-top: 100px;
+}
+
+.footer_top{
+  margin-bottom: 30px;
+}
+
+.footer_top img{
+  width: 100px;
+}
+
+.footer_top h4{
+  color: white;
+}
+
+.footer_top div ul li{
+  list-style: none;
+  margin: 10px 0;
+  
+}
+
+.footer_top div ul li a{
+  text-decoration: none;
+  color: grey;
+}
+
+.footer_bot{
+  color: white;
+  list-style: none;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.footer_bot .socials li{
+  font-size: 1.2rem;;
+  margin-right: 10px;
+}
+
+.footer_bot ul li{
+  display: inline-block
+}
+
+.footer_bot ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+.stores{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.stores img{
+  width: 150px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.stores .android img{
+  float:right;
+  margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -199,6 +389,22 @@ ul.nav_left, ul.nav_right {
 
   .how p{
     margin-left: 5px;
+  }
+
+  /* KNOW MORE */
+
+  .more_top:first-child *{
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    max-width: 80%;
+  }
+
+  /* FOOTER */
+
+  .footer_top [class*="col-"], .footer_bot [class*="col-"]{
+    margin-bottom: 50px;
+    padding-left: 50px;
   }
 
 
@@ -266,6 +472,40 @@ ul.nav_left, ul.nav_right {
     margin-top: 12px;
   }
 
+  /* KNOW MORE */
 
+  .more_top{
+    margin-top: 100px;
+    background-image: url(../img/garden.jpg);
+    background-position: right;
+    text-align: center;
+    color: white;
+  }
+
+  .more_top:first-child *{
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    max-width: 80%;
+  }
+
+  .more_top{
+    background-position: left;
+  }
+
+  .more_bot .card_app, .more_bot .card_find_us{
+    width: calc(100% - 60px);
+    margin: 0 30px;
+  }
+
+  /* FOOTER */
+
+  .footer_top [class*="col-"], .footer_bot [class*="col-"]{
+    margin-bottom: 50px;
+    padding-left: 50px;
+  }
+
+
+  
 
 }
